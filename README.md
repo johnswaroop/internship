@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+Submission for internship
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+name: john swaroop
+email: johnswaroop28@gmail.com
+
+project-link/demo : https://admiring-meitner-9e9dc3.netlify.app/
+
+![image](https://user-images.githubusercontent.com/71548636/121487042-5677f180-c9ef-11eb-9bc0-499959cfd1fd.png)
+
 
 ## Available Scripts
 
