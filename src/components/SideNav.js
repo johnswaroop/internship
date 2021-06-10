@@ -69,7 +69,7 @@ const SideNav = (props) => {
 
             </div>
 
-            { openForm ? <Form openNav={openForm} /> : null}
+            { openForm ? <Form openForm={[openForm, setOpenForm]} /> : null}
 
         </div >
 

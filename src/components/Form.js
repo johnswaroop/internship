@@ -10,7 +10,7 @@ import validator from 'validator';
 
 const Form = (props) => {
     const country = getCountryList();
-
+    const [openForm, setOpenForm] = props.openForm;
     let navWidth;
     if (props.openNav) {
         navWidth = {
@@ -52,10 +52,14 @@ const Form = (props) => {
         e.preventDefault();
 
         if (validator.isEmail(formState.email)) {
-            console.log(formState);
+
 
             if (validator.isMobilePhone(formState.phone_pre + formState.phone)) {
                 console.log(formState);
+                alert('submission sucessfull !');
+                setOpenForm((cs) => {
+                    return !cs;
+                })
             }
             else {
                 alert('Please ensure entered phone number is valid')
@@ -91,7 +95,7 @@ const Form = (props) => {
                 <span>
                     <label htmlFor="" style={{ marginBottom: '0.5rem' }}>Country</label>
 
-                    <Select options={country} value={formState.country} onChange={formHandlerCountry} required />
+                    <Select options={country} onChange={formHandlerCountry} required />
 
                 </span>
                 <span>
