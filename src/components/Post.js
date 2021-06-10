@@ -50,7 +50,7 @@ const Post = (props) => {
     else {
 
         return (
-            <motion.div key={props.toggle} className='post-card' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} exit={{ opacity: 0 }}>
+            <motion.div key={props.toggle} className='post-card' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} exit={{ opacity: 0 }} onClick={openLink}>
                 <h1>{news.title}</h1>
                 <h3 className='summary-card'>{news.summary}</h3>
                 <p>{news.published}</p>

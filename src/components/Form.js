@@ -90,7 +90,7 @@ const Form = (props) => {
                 </span>
                 <span>
                     <label htmlFor="">Address :</label>
-                    <textarea name='address' className='address' type="text" rows='8' onChange={formHandler} value={formState.address} required />
+                    <textarea name='address' className='address' type="text" rows='6' onChange={formHandler} value={formState.address} required />
                 </span>
                 <span>
                     <label htmlFor="" style={{ marginBottom: '0.5rem' }}>Country</label>
